@@ -26,7 +26,7 @@ function Table({ data, column }: tableProps) {
 const TableHeadItem = ({ item }: any) => <th>{item.heading}</th>
 const TableRow = ({ item, column }: any) => (
     <tr>
-        {column.map(({ columnItem, index }: any) => {
+        {column.map(( columnItem: any, index : any) => {
             return <td>{item[`${columnItem.value}`]}</td>
         })}
     </tr>
